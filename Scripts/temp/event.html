@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pict Cafe | Dashboard</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- Bootstrap 3.3.2 -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Morris chart -->
+    <link href="../plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <!-- jvectormap -->
+    <link href="../plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <!-- Daterange picker -->
+    <link href="../plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <!-- Theme style -->
+    <link href="../dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link href="../dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    <!-- GAllery links -->
+
+
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+
+    <!--  -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    @media only screen and (min-width: 720px) {
+      .mar1{
+          margin-top: 7%;
+      }
+    }
+    </style>
+  </head>
+  <body class="skin-blue">
+    <div class="wrapper">
+
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="index2.html" class="logo"><b>Pict</b>Cafe</a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <!-- Tasks: style can be found in dropdown.less -->
+              <li class="dropdown tasks-menu"><a href="upload.html"><i class="fa fa-plus-square-o"></i></a></li>
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="../dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+                  <span class="hidden-xs">Bhavya Shah</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                    <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                    <p>
+                      Bhavya Shah
+                      <small>bshah4397@gmail.com</small>
+                    </p>
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-right">
+                      <a href="../Scripts/signOut.php" class="btn btn-default btn-flat">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+            </div>
+            <div class="pull-left info">
+              <p>Bhavya Shah</p>
+
+              <a href="#"><i class="fa fa-circle text-success"></i> Verified</a>
+            </div>
+          </div>
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+              <input type="text" name="q" class="form-control" placeholder="Search..."/>
+              <span class="input-group-btn">
+                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+          <!-- /.search form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+            <li class="header">MAIN NAVIGATION</li>
+            <li class="active treeview">
+              <a href="dash.html">
+                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="upload.html">
+                <i class="fa fa-plus-square-o"></i> <span>Upload</span>
+              </a>
+            </li>
+            <li>
+              <a href="profile.html">
+                <i class="fa fa-user"></i> <span>Timeline</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Right side column. Contains the navbar and content of the page -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Martin Garrix -
+            <small>23 MARCH 2017</small>
+          </h1>
+        </section>
+        <!-- Main content -->
+        <section class="content">
+
+
+
+
+
+          <div id="grid-gallery" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								<img src="img/thumb/1.png" alt="img01"/>
+								<figcaption><h3>Letterpress asymmetrical</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/2.png" alt="img02"/>
+								<figcaption><h3>Vice velit chia</h3><p>Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis asymmetrical paleo. </p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/3.png" alt="img03"/>
+								<figcaption><h3>Brunch semiotics</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/4.png" alt="img04"/>
+								<figcaption><h3>Chillwave nihil occupy</h3><p>In post-ironic gluten-free deserunt, PBR&amp;B non pork belly cupidatat polaroid. </p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/5.png" alt="img05"/>
+								<figcaption><h3>Kale chips lomo biodiesel</h3><p>Pariatur food truck street art consequat sustainable, et kogi beard qui paleo. </p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/6.png" alt="img06"/>
+								<figcaption><h3>Exercitation occaecat</h3><p>Street chillwave hoodie ea gentrify.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/1.png" alt="img01"/>
+								<figcaption><h3>Selfies viral four</h3><p>Raw denim duis Tonx Shoreditch labore swag artisan High Life cred, stumptown Schlitz quinoa flexitarian mollit fanny pack.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/2.png" alt="img02"/>
+								<figcaption><h3>Photo booth skateboard</h3><p>Vinyl squid ex High Life. Paleo Neutra nulla master cleanse, Helvetica et enim nesciunt esse.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/3.png" alt="img03"/>
+								<figcaption><h3>Ex fashion axe</h3><p>Qui nesciunt et, in chia cliche irure. Eu YOLO nihil mollit twee locavore, tempor keytar asymmetrical irure aute sriracha consequat.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/4.png" alt="img04"/>
+								<figcaption><h3>Thundercats next level</h3><p>Portland nulla butcher ea XOXO, consequat Bushwick Pinterest elit twee pickled direct trade vero. </p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/5.png" alt="img05"/>
+								<figcaption><h3>Bushwick selvage synth</h3><p>Bicycle rights flannel Shoreditch, art party laboris Bushwick sriracha authentic chambray hella umami sed distillery master cleanse.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/1.png" alt="img01"/>
+								<figcaption><h3>Bottle wayfarers locavore</h3><p>Once there was a little asparagus, he was green and lonely.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/1.png" alt="img01"/>
+								<figcaption><h3>Letterpress asymmetrical</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/2.png" alt="img02"/>
+								<figcaption><h3>Vice velit chia</h3><p>Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis asymmetrical paleo. </p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/3.png" alt="img03"/>
+								<figcaption><h3>Brunch semiotics</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/4.png" alt="img04"/>
+								<figcaption><h3>Chillwave nihil occupy</h3><p>In post-ironic gluten-free deserunt, PBR&amp;B non pork belly cupidatat polaroid. </p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/5.png" alt="img05"/>
+								<figcaption><h3>Kale chips lomo biodiesel</h3><p>Pariatur food truck street art consequat sustainable, et kogi beard qui paleo. </p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/6.png" alt="img06"/>
+								<figcaption><h3>Exercitation occaecat</h3><p>Street chillwave hoodie ea gentrify.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/1.png" alt="img01"/>
+								<figcaption><h3>Selfies viral four</h3><p>Raw denim duis Tonx Shoreditch labore swag artisan High Life cred, stumptown Schlitz quinoa flexitarian mollit fanny pack.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/2.png" alt="img02"/>
+								<figcaption><h3>Photo booth skateboard</h3><p>Vinyl squid ex High Life. Paleo Neutra nulla master cleanse, Helvetica et enim nesciunt esse.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/3.png" alt="img03"/>
+								<figcaption><h3>Ex fashion axe</h3><p>Qui nesciunt et, in chia cliche irure. Eu YOLO nihil mollit twee locavore, tempor keytar asymmetrical irure aute sriracha consequat.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/4.png" alt="img04"/>
+								<figcaption><h3>Thundercats next level</h3><p>Portland nulla butcher ea XOXO, consequat Bushwick Pinterest elit twee pickled direct trade vero. </p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/5.png" alt="img05"/>
+								<figcaption><h3>Bushwick selvage synth</h3><p>Bicycle rights flannel Shoreditch, art party laboris Bushwick sriracha authentic chambray hella umami sed distillery master cleanse.</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/1.png" alt="img01"/>
+								<figcaption><h3>Bottle wayfarers locavore</h3><p>Once there was a little asparagus, he was green and lonely.</p></figcaption>
+							</figure>
+						</li>
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Letterpress asymmetrical</h3>
+									<p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+								</figcaption>
+								<img src="img/large/1.png" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Vice velit chia</h3>
+									<p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. Occupy wolf selvage bespoke tattooed, cred sustainable Odd Future hashtag butcher.</p>
+								</figcaption>
+								<img src="img/large/2.png" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Brunch semiotics</h3>
+									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
+								</figcaption>
+								<img src="img/large/3.png" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Chillwave nihil occupy</h3>
+									<p>Vice cliche locavore mumblecore vegan wayfarers asymmetrical letterpress hoodie mustache. Shabby chic lomo polaroid, scenester 8-bit Portland Pitchfork VHS tote bag.</p>
+								</figcaption>
+								<img src="img/large/4.png" alt="img04"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Kale chips lomo biodiesel</h3>
+									<p>Chambray Schlitz pug YOLO, PBR Tumblr semiotics. Flexitarian YOLO ennui Blue Bottle, forage dreamcatcher chillwave put a bird on it craft beer Etsy.</p>
+								</figcaption>
+								<img src="img/large/5.png" alt="img05"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Exercitation occaecat</h3>
+									<p>Cosby sweater hella lomo Thundercats VHS occupy High Life. Synth pop-up readymade single-origin coffee, fanny pack tousled retro. Fingerstache mlkshk ugh hashtag, church-key ethnic street art pug yr.</p>
+								</figcaption>
+								<img src="img/large/6.png" alt="img06"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Selfies viral four</h3>
+									<p>Ethnic readymade pug, small batch XOXO Odd Future normcore kogi food truck craft beer single-origin coffee banh mi photo booth raw denim. XOXO messenger bag pug VHS. Forage gluten-free polaroid, twee hoodie chillwave Helvetica.</p>
+								</figcaption>
+								<img src="img/large/1.png" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Photo booth skateboard</h3>
+									<p>Thundercats pour-over four loko skateboard Brooklyn, Etsy sriracha leggings dreamcatcher narwhal authentic 3 wolf moon synth Portland. Shabby chic photo booth Blue Bottle keffiyeh, McSweeney's roof party Carles.</p>
+								</figcaption>
+								<img src="img/large/2.png" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Ex fashion axe</h3>
+									<p>Ennui Blue Bottle shabby chic, organic butcher High Life tattooed meggings jean shorts Brooklyn sartorial polaroid. Cray raw denim +1, bespoke High Life Odd Future banh mi chillwave Marfa kogi disrupt paleo direct trade 90's Godard. </p>
+								</figcaption>
+								<img src="img/large/3.png" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Thundercats next level</h3>
+									<p>Typewriter authentic PBR, iPhone mixtape fixie post-ironic fingerstache Pitchfork artisan. Wayfarers master cleanse occupy, Tonx lo-fi swag Truffaut irony whatever Blue Bottle readymade PBR gluten-free. Lomo Pinterest Banksy fap. Retro ennui you probably haven't heard of them iPhone, PBR fashion axe polaroid.</p>
+								</figcaption>
+								<img src="img/large/4.png" alt="img04"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Bushwick selvage synth</h3>
+									<p>Schlitz deserunt pour-over consectetur. Selfies plaid asymmetrical farm-to-table, cred gastropub photo booth narwhal non roof party velit raw denim slow-carb meggings pug. Tempor post-ironic seitan cliche bicycle rights. Meh viral Williamsburg, quinoa 8-bit kale chips YOLO Marfa accusamus.</p>
+								</figcaption>
+								<img src="img/large/5.png" alt="img05"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Bottle wayfarers locavore</h3>
+									<p>Aliqua High Life art party fixie farm-to-table. Kitsch Echo Park shabby chic, narwhal fugiat Cosby sweater asymmetrical gastropub tofu. Authentic minim Pinterest Blue Bottle beard, aliqua chia XOXO dolor freegan banh mi vegan fugiat.</p>
+								</figcaption>
+								<img src="img/large/1.png" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Letterpress asymmetrical</h3>
+									<p>Pickled hoodie Pinterest 90's proident church-key chambray. Salvia incididunt slow-carb ugh skateboard velit, flannel authentic hoodie lomo fixie photo booth farm-to-table. Minim meggings Bushwick, semiotics Vice put a bird.</p>
+								</figcaption>
+								<img src="img/large/1.png" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Vice velit chia</h3>
+									<p>Tattooed assumenda chambray cray officia. 90's mollit ethnic church-key ex eu pop-up gentrify. Tonx raw denim eu, bitters nesciunt distillery Neutra pop-up. Drinking vinegar Helvetica Truffaut tattooed.</p>
+								</figcaption>
+								<img src="img/large/2.png" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Brunch semiotics</h3>
+									<p>Gentrify High Life adipisicing, duis slow-carb kogi Tumblr raw denim freegan Echo Park. Fingerstache laboris pork belly messenger bag, you probably haven't heard of them vegan twee Intelligentsia Vice Etsy pickled put a bird on it Godard roof party. Meggings small batch dreamcatcher velit.</p>
+								</figcaption>
+								<img src="img/large/3.png" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Chillwave nihil occupy</h3>
+									<p>Marfa exercitation non, beard +1 hashtag cardigan gluten-free mixtape church-key ugh eu Portland leggings. Ennui farm-to-table fingerstache keytar Echo Park tattooed. Seitan qui artisan, aliquip cupidatat sunt Portland wayfarers duis.</p>
+								</figcaption>
+								<img src="img/large/4.png" alt="img04"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Kale chips lomo biodiesel</h3>
+									<p>Lomo church-key whatever, seitan laborum drinking vinegar lo-fi semiotics nihil meh. Skateboard irure before they sold out Banksy. Narwhal High Life lomo aliqua drinking vinegar. PBR&B placeat proident, craft beer forage DIY nostrud meh flexitarian keytar Helvetica.</p>
+								</figcaption>
+								<img src="img/large/5.png" alt="img05"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Exercitation occaecat</h3>
+									<p>Skateboard Truffaut bicycle rights seitan normcore. Culpa lo-fi ennui, Pinterest before they sold out Echo Park roof party sapiente aesthetic consequat Truffaut freegan voluptate. Kogi banh mi vero nihil, freegan gluten-free cliche. Forage Etsy laboris anim normcore, McSweeney's ex.</p>
+								</figcaption>
+								<img src="img/large/6.png" alt="img06"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Selfies viral four</h3>
+									<p>Viral roof party locavore flexitarian nihil fanny pack actually Odd Future anim commodo. Sunt yr aute, enim quis plaid sartorial duis leggings lo-fi gluten-free. Tote bag flexitarian pug stumptown, Cosby sweater try-hard ethnic scenester. Mumblecore +1 hoodie accusamus skateboard slow-carb, Thundercats Godard placeat craft beer meh enim trust fund.</p>
+								</figcaption>
+								<img src="img/large/1.png" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Photo booth skateboard</h3>
+									<p>Culpa pour-over cray nesciunt dreamcatcher. Meggings distillery cillum raw denim voluptate, single-origin coffee lo-fi ethical iPhone four loko nihil salvia. Biodiesel ea Intelligentsia quis deep v, American Apparel trust fund slow-carb synth semiotics quinoa Brooklyn pour-over nulla Godard.</p>
+								</figcaption>
+								<img src="img/large/2.png" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Ex fashion axe</h3>
+									<p>Bespoke irony tousled nihil flexitarian, salvia tempor nostrud Bushwick hashtag Austin ethnic disrupt. Beard Helvetica nihil, chia craft beer Wes Anderson keytar dolore. Irure incididunt flexitarian photo booth cillum, YOLO deserunt Brooklyn artisan. Brunch assumenda irony, Blue Bottle roof party DIY ullamco quis.</p>
+								</figcaption>
+								<img src="img/large/3.png" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Thundercats next level</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+								</figcaption>
+								<img src="img/large/4.png" alt="img04"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Bushwick selvage synth</h3>
+									<p>Ethical Truffaut tofu food truck cred cornhole. Irure umami Austin cornhole blog ethical. Aliqua yr Truffaut, adipisicing hashtag Shoreditch eiusmod tempor literally vinyl.</p>
+								</figcaption>
+								<img src="img/large/5.png" alt="img05"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Bottle wayfarers locavore</h3>
+									<p>Pork belly irony Shoreditch fashion axe DIY. Portland banjo irony, squid gentrify Austin fixie church-key magna. Marfa artisan Echo Park, McSweeney's banjo sunt keytar tofu. Brooklyn PBR single-origin coffee disrupt polaroid ut, gluten-free XOXO plaid magna.</p>
+								</figcaption>
+								<img src="img/large/1.png" alt="img01"/>
+							</figure>
+						</li>
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>P</b>C
+        </div>
+        <strong>Copyright &copy; 2017 <a href="">Pict Cafe</a>.</strong> All rights reserved.
+      </footer>
+
+    </div><!-- ./wrapper -->
+
+
+
+
+    <!-- Gallery Links -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/cbpGridGallery.js"></script>
+		<script>
+			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+		</script>
+    <!--  -->
+
+    <!-- jQuery 2.1.3 -->
+    <script src="../plugins/jQuery/jQuery-2.1.3.min.js"></script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- FastClick -->
+    <script src='../plugins/fastclick/fastclick.min.js'></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/app.min.js" type="text/javascript"></script>
+    <!-- Sparkline -->
+    <script src="../plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+    <!-- jvectormap -->
+    <script src="../plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+    <script src="../plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+    <!-- daterangepicker -->
+    <script src="../plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+    <!-- datepicker -->
+    <script src="../plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+    <!-- iCheck -->
+    <script src="../plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="../plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <!-- ChartJS 1.0.1 -->
+    <script src="../plugins/chartjs/Chart.min.js" type="text/javascript"></script>
+
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../dist/js/pages/dashboard2.js" type="text/javascript"></script>
+
+    <!-- AdminLTE for demo purposes -->
+    <script src="../dist/js/demo.js" type="text/javascript"></script>
+  </body>
+</html>
